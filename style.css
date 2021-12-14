@@ -1,0 +1,66 @@
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #fff;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+.bg-dark-x{
+    background-color: var(--dark-x) !important;
+}
+
+.form-check-label, .form-text{
+    font-size: .8em;
+}
+
+.icon{
+    width: 24px;
+    position: absolute;
+    left: 10px;
+    z-index: -1;
+    color: var(--light);
+}
+
+.btn:hover > .icon{
+    z-index: 1;
+    color: var(--dark);
+}
+
+.box-2{
+    flex-direction: column !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+/* .box-2 .item-1{
+    align-self: center !important;
+} */
+
+.carousel-inner .img{
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: var(--dark-x);
+}
+
+.carousel-inner .carousel-item{
+    height: 25vh;
+    }
+
+@media screen and (min-width: 576px) {
+    .carousel-inner .carousel-item{
+    height: 100vh;
+    }
+}
